@@ -1,0 +1,23 @@
+{
+  "name": "o-icons-card",
+  "version": "0.0.1",
+  "description": "sample assignment icons",
+  "homepage": "https://github.com/Pearson-Higher-Ed/o-icons-card",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fontawesome": "~4.0.3",
+    "o-card": "~1.0.1"
+  },
+  "main": [
+    "main.scss",
+    "main.js"
+  ],
+  "private": true
+}
