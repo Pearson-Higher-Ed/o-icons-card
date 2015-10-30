@@ -1,8 +1,6 @@
 /*global*/
 "use strict";
 
-var icons = require("./Icons");
-
 function Icons(element, params) {
 	if (!(this instanceof Icons)) {
 		throw new TypeError("Constructor Calendar requires \"new\"");
@@ -21,22 +19,6 @@ function Icons(element, params) {
 		throw "No data provided. Please configuration data.";
 	}
 
-	var width = 200;
-	var height = 200;
-	switch(params.size) {
-		case "small":
-			throw new Error("Size cannot be small");
-		case "medium":
-			width = 200;
-			height = 200;
-			break;
-		case "large":
-			width = 400;
-			height = 400;
-			break;
-		default:
-			break;
-	}
 	var chartDiv = document.createElement("div");
 	chartDiv.className = "o-calendar";
 
@@ -46,24 +28,45 @@ function Icons(element, params) {
 	chartTitle.innerHTML = params.title;
 
 	chartDiv.appendChild(chartTitle);
+
 	this.card = document.createElement("div");
 	this.card.appendChild(chartDiv);
 	this.card.className = "o-card o-card--" + params.size;
 	this.card.style.backgroundColor = "#EBEBEB";
-	var chart = icons().width(200).height(200).data(params.data);
+	var footer = document.createElement("div");
+	footer.innerHTML = params.data.footer;
+	footer.className = "o-percentcard-container__cardfooter";
 	//image 
 	if(params.data != null && params.data.img != null){
 		var imageDiv = document.createElement("div");
 		imageDiv.className = "o-calendarImage";
 		var images = document.createElement("i");
 		images.className = params.data.img;
-		images.style.fontSize = "3.7em";
+		images.style.fontSize = "2.7em";
 		imageDiv.appendChild(images);
 		this.card.appendChild(imageDiv);
-		chart(imageDiv);
+		
 	} else {
-		chart(chartDiv);
+		var grade;
+	if (params.data.txt.substr(0,2) < 60) {
+		grade = "F";
+	} else if (params.data.txt.substr(0,2) < 70) {
+		grade = "D";
+	} else if (params.data.txt.substr(0,2) < 80) {
+		grade = "C";
+	} else if (params.data.txt.substr(0,2) < 90) {
+		grade = "B";
+	} else {
+		grade = "A";
 	}
+	var percentclass = "o-percentcolor__" + grade.toLowerCase() + "grade";
+	var chartDiv = document.createElement("div");
+	chartDiv.className = percentclass;
+	chartDiv.innerHTML = params.data.txt;
+	this.card.appendChild(chartDiv);
+	}
+	
+	this.card.appendChild(footer);
 	element.appendChild(this.card);
 
 }

@@ -1,22 +1,20 @@
 .o-icon-text {
-	font: 10px sans-serif;
-	font-size: 125%;
-	text-anchor: middle;
+	fill: #5C656B;
+	font-size: 200%;
+	margin-bottom: 0px;
+	margin-top: 10px;
 	font-weight: bold;
 }
 .o-calendarImage {
 	font: 10px sans-serif;
 	font-size: 100%;
 	text-anchor: middle;
-	font-weight: bold;
-    position: relative;
-    top: 45px;
-    left: 5px;
+	font-weight: bold;  
 }
 
 .o-calendar-title {
 	fill: #5C656B;
-	font-size: 125%;
+	font-size: 75%;
 	margin-bottom: 0px;
 	margin-top: 10px;
 	font-weight: bold;
@@ -29,7 +27,7 @@ font: 10px sans-serif;
 	font-size: 200%;
 	text-anchor: middle;
 	font-weight: bold;
-		fill: $agrade;
+		color: $agrade;
 	}
 
 	.o-percentcolor__bgrade {
@@ -37,7 +35,7 @@ font: 10px sans-serif;
 	font-size: 200%;
 	text-anchor: middle;
 	font-weight: bold;
-		fill: $bgrade;
+		color: $bgrade;
 	}
 
 	.o-percentcolor__cgrade { 
@@ -45,7 +43,7 @@ font: 10px sans-serif;
 	font-size: 200%;
 	text-anchor: middle;
 	font-weight: bold;
-		fill: $cgrade;
+		color: $cgrade;
 	}
 
 	.o-percentcolor__dgrade {
@@ -53,7 +51,7 @@ font: 10px sans-serif;
 	font-size: 200%;
 	text-anchor: middle;
 	font-weight: bold;
-		fill: $dgrade;
+		color: $dgrade;
 	}
 
 	.o-perecentcolor__fgrade {
@@ -61,7 +59,7 @@ font: 10px sans-serif;
 	font-size: 200%;
 	text-anchor: middle;
 	font-weight: bold;
-		fill: $fgrade;
+		color: $fgrade;
 	}
 	.o-number {
 	font: 10px sans-serif;
@@ -71,3 +69,14 @@ font: 10px sans-serif;
 	font-weight: bold;
 
 }
+.o-percentcard-container__cardfooter {
+		
+	font-family: arial, sans-serif;
+	text-align: center;
+		
+		font-weight: bold;
+	}
+
+
+
+
