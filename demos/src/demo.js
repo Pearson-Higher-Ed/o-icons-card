@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     new Icons("#chart", {
          size: "small",
-        data:{footer: "Complete", txt: "78%"},//{footer:"",txt:"../src/calender.png"}
+        data:{footer: "Complete", txt: "90%"},//{footer:"",txt:"../src/calender.png"} // test 6 and 42
         title: "Course Progress Week 6 of 12 "}
     );
 });

@@ -5,14 +5,14 @@
 	margin-top: 10px;
 	font-weight: bold;
 }
-.o-calendarImage {
+.o-icon-img {
 	font: 10px sans-serif;
 	font-size: 100%;
 	text-anchor: middle;
 	font-weight: bold;  
 }
 
-.o-calendar-title {
+.o-icon-title {
 	fill: #5C656B;
 	font-size: 75%;
 	margin-bottom: 0px;
@@ -20,48 +20,47 @@
 	font-weight: bold;
 }
 
-#make parent css
-
 .o-percentcolor__agrade {
-font: 10px sans-serif;
-	font-size: 200%;
-	text-anchor: middle;
-	font-weight: bold;
-		color: $agrade;
-	}
-
-	.o-percentcolor__bgrade {
-font: 10px sans-serif;
-	font-size: 200%;
-	text-anchor: middle;
-	font-weight: bold;
-		color: $bgrade;
-	}
-
-	.o-percentcolor__cgrade { 
-font: 10px sans-serif;
-	font-size: 200%;
-	text-anchor: middle;
-	font-weight: bold;
-		color: $cgrade;
-	}
-
-	.o-percentcolor__dgrade {
 	font: 10px sans-serif;
 	font-size: 200%;
 	text-anchor: middle;
 	font-weight: bold;
-		color: $dgrade;
+	color: $agrade;
 	}
 
-	.o-perecentcolor__fgrade {
+.o-percentcolor__bgrade {
 	font: 10px sans-serif;
 	font-size: 200%;
 	text-anchor: middle;
 	font-weight: bold;
-		color: $fgrade;
+	color: $bgrade;
 	}
-	.o-number {
+
+.o-percentcolor__cgrade { 
+	font: 10px sans-serif;
+	font-size: 200%;
+	text-anchor: middle;
+	font-weight: bold;
+	color: $cgrade;
+	}
+
+.o-percentcolor__dgrade {
+	font: 10px sans-serif;
+	font-size: 200%;
+	text-anchor: middle;
+	font-weight: bold;
+	color: $dgrade;
+	}
+
+.o-percentcolor__fgrade {
+	font: 10px sans-serif;
+	font-size: 200%;
+	text-anchor: middle;
+	font-weight: bold;
+	color: $fgrade;
+	}
+
+.o-number {
 	font: 10px sans-serif;
 	font-size: 200%;
 	text-anchor: middle;
@@ -69,12 +68,10 @@ font: 10px sans-serif;
 	font-weight: bold;
 
 }
-.o-percentcard-container__cardfooter {
-		
+.o-iconcard-container__cardfooter {	
 	font-family: arial, sans-serif;
 	text-align: center;
-		
-		font-weight: bold;
+	font-weight: bold;
 	}
 
 
